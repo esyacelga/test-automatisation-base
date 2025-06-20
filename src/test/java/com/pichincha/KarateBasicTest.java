@@ -8,8 +8,13 @@ class KarateBasicTest {
     }
 
    @Karate.Test
-    Karate testSample() {
+    Karate obtenerPersonajes() {
         return Karate.run("classpath:com/pichincha/features/obtenerPersonajes.feature");
     }
 
+
+    @Karate.Test
+    Karate obtenerPersonajePorId() {
+        return Karate.run("classpath:com/pichincha/features/obtenerPersonajePorId.feature");
+    }
 }
