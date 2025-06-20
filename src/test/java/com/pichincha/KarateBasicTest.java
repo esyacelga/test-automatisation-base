@@ -27,4 +27,10 @@ class KarateBasicTest {
     Karate delete() {
         return Karate.run("classpath:com/pichincha/features/delete.feature");
     }
+
+
+    @Karate.Test
+    Karate post() {
+        return Karate.run("classpath:com/pichincha/features/post.feature");
+    }
 }
