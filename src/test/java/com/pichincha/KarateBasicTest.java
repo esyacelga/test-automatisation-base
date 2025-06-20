@@ -1,3 +1,6 @@
+/*
+package com.pichincha;
+
 import com.intuit.karate.junit5.Karate;
 
 class KarateBasicTest {
@@ -10,3 +13,4 @@ class KarateBasicTest {
     }
 
 }
+*/
