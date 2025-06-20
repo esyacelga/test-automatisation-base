@@ -54,7 +54,7 @@ public class TestRunner {
             pathFile.mkdir();
         }
         Files.write(Paths.get(karateResumePath + "/karate.json"), karateJson.toJSONString().getBytes());
-        Configuration config = new Configuration(new File("build"), "Banca Movil");
+        Configuration config = new Configuration(new File("build"), "Pueba");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
