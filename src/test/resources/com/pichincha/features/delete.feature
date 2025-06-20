@@ -17,12 +17,12 @@ Feature: BP04 - Eliminar personaje por ID (microservicio para Marvel Characters 
 
   @id:5 @eliminarPersonaje @deleteExitoso
   Scenario: T-API-BP04-CA01-Eliminar personaje exitosamente por ID - 200
-    Given path '1'
+    Given path '300'
     When method DELETE
-    Then status 200
+    Then status 204
 
   @id:6 @eliminarPersonaje @deleteNoExitoso
   Scenario: T-API-BP04-CA02-Intentar eliminar personaje inexistente - 404
-    Given path '/99999'    # Usa un ID que no exista en tu sistema
+    Given path '99999'
     When method DELETE
     Then status 404
