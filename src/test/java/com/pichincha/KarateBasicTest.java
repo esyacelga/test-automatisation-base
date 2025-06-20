@@ -17,4 +17,14 @@ class KarateBasicTest {
     Karate obtenerPersonajePorId() {
         return Karate.run("classpath:com/pichincha/features/obtenerPersonajePorId.feature");
     }
+
+    @Karate.Test
+    Karate put() {
+        return Karate.run("classpath:com/pichincha/features/put.feature");
+    }
+
+    @Karate.Test
+    Karate delete() {
+        return Karate.run("classpath:com/pichincha/features/delete.feature");
+    }
 }
